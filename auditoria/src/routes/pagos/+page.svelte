@@ -1,8 +1,8 @@
 <script>
     import Header from "$lib/components/Header.svelte";
-    import Dashboard from "$lib/components/Dashboard.svelte";
+    import GestionPagos from "$lib/components/GestionPagos.svelte";
 </script>
 
 <Header>
-    <Dashboard />
+    <GestionPagos />
 </Header>

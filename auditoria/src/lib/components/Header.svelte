@@ -7,6 +7,9 @@
     function onKeydown(e: KeyboardEvent) {
       if (e.key === 'Escape') menuOpen = false;
     }
+
+
+   
 </script>
 <div class="relative flex size-full min-h-screen flex-col bg-[#141414] dark group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
     <div class="layout-container flex h-full grow flex-col">
@@ -20,7 +23,7 @@
             <!-- (tu svg intacto) -->
             <!-- ... -->
           </div>
-          <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">FinanLab</h2>
+          <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Avanza</h2>
         </div>
       
         <!-- Botón hamburguesa (solo móvil) -->
@@ -46,9 +49,9 @@
         <!-- Zona derecha (desktop) -->
         <div class="hidden md:flex flex-1 justify-end gap-8">
           <div class="flex items-center gap-9">
-            <a class="text-white text-sm font-medium leading-normal" href="/">Inicio</a>
-            <a class="text-white text-sm font-medium leading-normal" href="/">Préstamos</a>
-            <a class="text-white text-sm font-medium leading-normal" href="/usuarios">Usuarios</a>
+            <a class="text-white text-sm font-medium leading-normal" href="/">Dashboard</a>
+            <a class="text-white text-sm font-medium leading-normal" href="/pagos">Préstamos</a>
+            <a class="text-white text-sm font-medium leading-normal" href="/listado-usuario">Usuarios</a>
             <a class="text-white text-sm font-medium leading-normal" href="/">Pagos</a>
             <a class="text-white text-sm font-medium leading-normal" href="/">Perfil</a>
           </div>
@@ -91,15 +94,13 @@
     transition:slide
   >
     <div class="px-4 py-3 flex flex-col gap-4">
-      <a class="text-white text-sm font-medium leading-normal" href="/" on:click={() => (menuOpen = false)}>Inicio</a>
-      <a class="text-white text-sm font-medium leading-normal" href="/" on:click={() => (menuOpen = false)}>Préstamos</a>
-      <a class="text-white text-sm font-medium leading-normal" href="/" on:click={() => (menuOpen = false)}>Pagos</a>
+      <a class="text-white text-sm font-medium leading-normal" href="/dashboard" on:click={() => (menuOpen = false)}>Inicio</a>
+      <a class="text-white text-sm font-medium leading-normal" href="/pagos" on:click={() => (menuOpen = false)}>Préstamos</a>
+      <a class="text-white text-sm font-medium leading-normal" href="/listado-usuario" on:click={() => (menuOpen = false)}>Usuarios</a>
       <a class="text-white text-sm font-medium leading-normal" href="/" on:click={() => (menuOpen = false)}>Perfil</a>
 
       <div class="flex gap-2">
-        <button
-          class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#214a3c] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
-        >
+        <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#214a3c] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
           <div class="text-white" data-icon="Bell" data-size="20px" data-weight="regular">
             <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
               <path
@@ -110,6 +111,7 @@
         </button>
         <button
           class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#214a3c] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+          on:click={channgeColor}
         >
           <div class="text-white" data-icon="Moon" data-size="20px" data-weight="regular">
             <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
