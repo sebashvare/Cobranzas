@@ -46,10 +46,11 @@
         <!-- Zona derecha (desktop) -->
         <div class="hidden md:flex flex-1 justify-end gap-8">
           <div class="flex items-center gap-9">
-            <a class="text-white text-sm font-medium leading-normal" href="#">Inicio</a>
-            <a class="text-white text-sm font-medium leading-normal" href="#">Préstamos</a>
-            <a class="text-white text-sm font-medium leading-normal" href="#">Pagos</a>
-            <a class="text-white text-sm font-medium leading-normal" href="#">Perfil</a>
+            <a class="text-white text-sm font-medium leading-normal" href="/">Inicio</a>
+            <a class="text-white text-sm font-medium leading-normal" href="/">Préstamos</a>
+            <a class="text-white text-sm font-medium leading-normal" href="/usuarios">Usuarios</a>
+            <a class="text-white text-sm font-medium leading-normal" href="/">Pagos</a>
+            <a class="text-white text-sm font-medium leading-normal" href="/">Perfil</a>
           </div>
       
           <div class="flex gap-2">
@@ -90,10 +91,10 @@
     transition:slide
   >
     <div class="px-4 py-3 flex flex-col gap-4">
-      <a class="text-white text-sm font-medium leading-normal" href="#" on:click={() => (menuOpen = false)}>Inicio</a>
-      <a class="text-white text-sm font-medium leading-normal" href="#" on:click={() => (menuOpen = false)}>Préstamos</a>
-      <a class="text-white text-sm font-medium leading-normal" href="#" on:click={() => (menuOpen = false)}>Pagos</a>
-      <a class="text-white text-sm font-medium leading-normal" href="#" on:click={() => (menuOpen = false)}>Perfil</a>
+      <a class="text-white text-sm font-medium leading-normal" href="/" on:click={() => (menuOpen = false)}>Inicio</a>
+      <a class="text-white text-sm font-medium leading-normal" href="/" on:click={() => (menuOpen = false)}>Préstamos</a>
+      <a class="text-white text-sm font-medium leading-normal" href="/" on:click={() => (menuOpen = false)}>Pagos</a>
+      <a class="text-white text-sm font-medium leading-normal" href="/" on:click={() => (menuOpen = false)}>Perfil</a>
 
       <div class="flex gap-2">
         <button

@@ -14,7 +14,7 @@
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
             <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-white tracking-light text-[32px] font-bold leading-tight min-w-72">Gestión de Pagos</p></div>
             <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Información del Cliente</h3>
-            <div class="p-4 grid grid-cols-2">
+            <div class="p-4 grid grid-cols-3">
               <div class="flex flex-col gap-1 border-t border-solid border-t-[#2f6a55] py-4 pr-2">
                 <p class="text-[#8ecdb7] text-sm font-normal leading-normal">Nombre</p>
                 <p class="text-white text-sm font-normal leading-normal">Lucia Rodriguez</p>
@@ -26,6 +26,14 @@
               <div class="flex flex-col gap-1 border-t border-solid border-t-[#2f6a55] py-4 pr-2">
                 <p class="text-[#8ecdb7] text-sm font-normal leading-normal">Fecha de Creación</p>
                 <p class="text-white text-sm font-normal leading-normal">20/03/2023</p>
+              </div>
+              <div class="flex flex-col gap-1 border-t border-solid border-t-[#2f6a55] py-4 pl-2">
+                <p class="text-[#8ecdb7] text-sm font-normal leading-normal">Cantidad de Préstamos</p>
+                <p class="text-white text-sm font-normal leading-normal">2</p>
+              </div>
+              <div class="flex flex-col gap-1 border-t border-solid border-t-[#2f6a55] py-4 pl-2">
+                <p class="text-[#8ecdb7] text-sm font-normal leading-normal">Cantidad de Préstamos</p>
+                <p class="text-white text-sm font-normal leading-normal">2</p>
               </div>
               <div class="flex flex-col gap-1 border-t border-solid border-t-[#2f6a55] py-4 pl-2">
                 <p class="text-[#8ecdb7] text-sm font-normal leading-normal">Cantidad de Préstamos</p>
