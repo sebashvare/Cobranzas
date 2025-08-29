@@ -3,11 +3,9 @@
       <div class="flex flex-wrap justify-between gap-3 p-4">
         <p class="text-white tracking-light text-[32px] font-bold leading-tight min-w-72 uppercase">Listado Usuarios</p>
         <div class="flex px-4 py-3 justify-end">
-            <button
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#019863] text-white text-sm font-bold leading-normal tracking-[0.015em]"
-            >
+            <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#019863] text-white text-sm font-bold leading-normal tracking-[0.015em]" href="usuarios">
               <span class="truncate">Crear Usuario</span>
-            </button>
+            </a>
           </div>
       </div>
       <div class="px-4 py-3">

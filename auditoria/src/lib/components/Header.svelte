@@ -7,8 +7,6 @@
     function onKeydown(e: KeyboardEvent) {
       if (e.key === 'Escape') menuOpen = false;
     }
-
-
    
 </script>
 <div class="relative flex size-full min-h-screen flex-col bg-[#141414] dark group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
@@ -23,7 +21,7 @@
             <!-- (tu svg intacto) -->
             <!-- ... -->
           </div>
-          <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Avanza</h2>
+          <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] uppercase">Avanza</h2>
         </div>
       
         <!-- Botón hamburguesa (solo móvil) -->
@@ -48,7 +46,7 @@
       
         <!-- Zona derecha (desktop) -->
         <div class="hidden md:flex flex-1 justify-end gap-8">
-          <div class="flex items-center gap-9">
+          <div class="flex items-center gap-9 uppercase">
             <a class="text-white text-sm font-medium leading-normal" href="/">Dashboard</a>
             <a class="text-white text-sm font-medium leading-normal" href="/pagos">Préstamos</a>
             <a class="text-white text-sm font-medium leading-normal" href="/listado-usuario">Usuarios</a>
@@ -93,7 +91,7 @@
     class="md:hidden border-b border-[#214a3c] bg-[#10231c]"
     transition:slide
   >
-    <div class="px-4 py-3 flex flex-col gap-4">
+    <div class="px-4 py-3 flex flex-col gap-4 uppercase">
       <a class="text-white text-sm font-medium leading-normal" href="/dashboard" on:click={() => (menuOpen = false)}>Inicio</a>
       <a class="text-white text-sm font-medium leading-normal" href="/pagos" on:click={() => (menuOpen = false)}>Préstamos</a>
       <a class="text-white text-sm font-medium leading-normal" href="/listado-usuario" on:click={() => (menuOpen = false)}>Usuarios</a>
